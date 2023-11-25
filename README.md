@@ -1,2 +1,4 @@
 # myfinance-web-dotnet
-Finance Manager
+Sistema Financeiro Web Pessoal
+
+1. Descrição: 
