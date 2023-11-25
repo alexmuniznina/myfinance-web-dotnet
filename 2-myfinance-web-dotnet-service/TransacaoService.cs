@@ -8,7 +8,7 @@ namespace myfinance_web_dotnet_service
     public class TransacaoService : ITransacaoService
     {
         private readonly MyFinanceDbContext _dbContext;
-        public TransacaoService(MyFinnanceDbContext dbContext)
+        public TransacaoService(MyFinanceDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -24,7 +24,7 @@ namespace myfinance_web_dotnet_service
             else
             {
                 dbSet.Attach(Entidade);
-                _dbContext.Entry(Entidade).State = Entity.Modified;
+                _dbContext.Entry(Entidade).State = EntityState.Modified;
             }
             _dbContext.SaveChanges();
         }
